@@ -1,0 +1,23 @@
+{
+  "name": "edwardnguyen225.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwardnguyen225/edwardnguyen225.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwardnguyen225/edwardnguyen225.github.io/issues"
+  },
+  "homepage": "https://github.com/edwardnguyen225/edwardnguyen225.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  }
+}
