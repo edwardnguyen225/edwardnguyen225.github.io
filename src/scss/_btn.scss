@@ -5,34 +5,55 @@
   position: relative;
   padding: 0.8rem 1.6rem;
 
-  border: 2px solid transparent;
+  border: 3px solid transparent;
 
   text-decoration: none;
   text-align: center;
   color: #5e5e5e;
   font-size: 1.125rem;
+  font-weight: 700;
 
   cursor: pointer;
   color: #333;
   background-color: #fff;
   border-color: #ccc;
-
-  transition: transform 0.3s ease;
-  
-  &:hover {
-      transform: scale(1.025);
-  }
+  transition: all 0.25s ease-in-out;
 
   &-primary {
     color: $bondiBlue;
     border-color: $bondiBlue;
+
+    &:hover,
+    &:focus {
+      background-color: $bondiBlue;
+      color: white;
+    }
+  }
+
+  &-white {
+    color: $kindaGrey;
+    border-color: $kindaGrey;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: $bondiBlue;
+    }
   }
 
   &-noborder {
-      border: none;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $bondiBlue;
+
+      transform: translateX(0.5rem);
+    }
   }
 
   &-transparent {
-      background: transparent;
+    background: transparent;
   }
 }
