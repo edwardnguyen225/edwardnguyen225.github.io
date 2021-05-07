@@ -14,6 +14,26 @@ html {
 }
 
 body {
-  font-family: Montserrat,sans-serif;
-  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+}
+
+section {
+  padding: 5rem 1rem;
+}
+.section {
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__body {
+    font-size: 1.25rem;
+  }
 }
