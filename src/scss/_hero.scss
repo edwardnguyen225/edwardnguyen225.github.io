@@ -1,0 +1,71 @@
+@use "variables" as *;
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 0;
+  font-weight: 400;
+  color: #272341;
+  padding: 0 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  line-height: 1.5;
+  padding: 0 1.6rem;
+
+  text-align: center;
+  font-weight: 700;
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+
+    span {
+      color: $bondiBlue;
+    }
+  }
+
+  &__subtitles {
+    font-size: 2.5rem;
+  }
+
+  a {
+    font-size: 1.25rem;
+  }
+
+  &__btn {
+      margin-top: 2rem;
+  }
+
+  &__img {
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  /* #### Tablet Portrait and Landscape #### */
+  @media screen and (min-device-width: $breakpointTablet) and (max-device-width: $breakpointLaptop) {
+    &__title {
+      font-size: 4.5rem;
+    }
+  }
+
+  /* #### Laptop #### */
+  @media screen and (min-device-width: $breakpointLaptop) {
+    padding-left: 5.6rem;
+    align-items: flex-start;
+
+    &__title {
+      font-size: 4rem;
+    }
+  }
+}
