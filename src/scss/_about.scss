@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+.about {
+  background-color: $bondiBlue;
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-weight: 400;
+  color: white;
+
+  img {
+    width: 128px;
+    height: auto;
+
+    margin-bottom: 1.25rem;
+
+    border-radius: 50%;
+  }
+
+  .section__body {
+    &__description {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      line-height: 1.5;
+    }
+
+    .btn {
+      margin-top: 2rem;
+    }
+
+    @media screen and (min-device-width: $breakpointTablet) and (max-device-width: $breakpointLaptop) {
+      font-size: 1.25rem;
+      width: 75%;
+    }
+
+    @media screen and (min-device-width: $breakpointLaptop) {
+      width: 60%;
+    }
+  }
+
+  @media screen and (min-device-width: $breakpointLaptop) {
+  }
+}
