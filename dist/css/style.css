@@ -32,6 +32,35 @@ section {
   font-size: 1.25rem;
 }
 
+footer,
+.footer {
+  padding: 1.5rem 2rem;
+  position: relative;
+  background-color: #393e46;
+  color: gray;
+  text-align: center;
+}
+footer__text,
+.footer__text {
+  line-height: 1.2;
+  margin: 0.3rem auto;
+}
+footer a,
+.footer a {
+  padding: 0.4rem 0.3rem 0.2rem;
+  color: #00aab3;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+footer a:hover,
+footer a:focus,
+.footer a:hover,
+.footer a:focus {
+  color: #393e46;
+  background-color: #abd8d3;
+  border-radius: 5px;
+}
+
 .btn {
   display: inline-block;
   position: relative;
