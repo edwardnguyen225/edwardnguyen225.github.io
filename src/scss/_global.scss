@@ -58,12 +58,15 @@ footer,
     color: $bondiBlue;
     text-decoration: none;
     transition: all 0.2s ease-in;
-  }
 
-  a:hover,
-  a:focus {
-    color: $brightGray;
-    background-color: $sinbadBlue;
-    border-radius: 5px;
+    &:hover,
+    &:focus {
+      color: $brightGray;
+      background-color: $sinbadBlue;
+      border-radius: 5px;
+    }
+  }
+  .reference {
+    color: rgba($bondiBlue, 0.8);
   }
 }
