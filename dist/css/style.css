@@ -52,13 +52,16 @@ footer a,
   text-decoration: none;
   transition: all 0.2s ease-in;
 }
-footer a:hover,
-footer a:focus,
+footer a:hover, footer a:focus,
 .footer a:hover,
 .footer a:focus {
   color: #393e46;
   background-color: #abd8d3;
   border-radius: 5px;
+}
+footer .reference,
+.footer .reference {
+  color: rgba(0, 170, 179, 0.8);
 }
 
 .btn {
