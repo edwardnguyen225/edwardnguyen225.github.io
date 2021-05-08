@@ -37,3 +37,33 @@ section {
     font-size: 1.25rem;
   }
 }
+
+footer,
+.footer {
+  padding: 1.5rem 2rem;
+  position: relative;
+
+  background-color: $brightGray;
+
+  color: $gray;
+  text-align: center;
+
+  &__text {
+    line-height: 1.2;
+    margin: 0.3rem auto;
+  }
+
+  a {
+    padding: 0.4rem 0.3rem 0.2rem;
+    color: $bondiBlue;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+  }
+
+  a:hover,
+  a:focus {
+    color: $brightGray;
+    background-color: $sinbadBlue;
+    border-radius: 5px;
+  }
+}
