@@ -16,20 +16,26 @@ body {
   font-size: 1.125rem;
 }
 
-section {
-  padding: 3rem 1rem;
-}
-
 .section__header {
+  padding: 3rem 1rem 0.3rem;
   text-align: center;
 }
 .section__title {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .section__body {
+  padding: 0.5rem 2rem 3rem;
   font-size: 1.25rem;
+}
+@media screen and (min-device-width: 1024px) {
+  .section__title {
+    font-size: 3rem;
+  }
+  .section__body {
+    font-size: 1.4rem;
+  }
 }
 
 footer,
@@ -288,6 +294,49 @@ footer .reference,
 }
 .card__footer__paragraph {
   font-style: italic;
+}
+
+.projects .section__header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 2rem;
+  background-color: #00aab3;
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  color: #ededed;
+}
+.projects .section__header .projects__svg {
+  width: 70%;
+}
+.projects .section__header .section__header__text .section__title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.projects .section__header .section__header__text .section__subtitle {
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .projects .section__header .projects__svg {
+    width: 40%;
+    max-width: 40vw;
+  }
+}
+@media screen and (min-device-width: 1024px) {
+  .projects .section__header {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projects .section__header .projects__svg {
+    justify-self: end;
+    max-width: 22rem;
+  }
+  .projects .section__header .section__header__text {
+    justify-self: start;
+    width: 27rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

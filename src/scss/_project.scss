@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+.projects {
+  .section__header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    padding: 3rem 2rem;
+
+    background-color: $bondiBlue;
+    background-image: linear-gradient(135deg, #02aab0, #00cdac);
+
+    color: $kindaGrey;
+
+    .projects__svg {
+      width: 70%;
+    }
+
+    .section__header__text {
+      .section__title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .section__subtitle {
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+
+    @media screen and (min-device-width: $breakpointTablet) and (max-device-width: $breakpointLaptop) {
+      .projects__svg {
+        width: 40%;
+        max-width: 40vw;
+      }
+    }
+
+    @media screen and (min-device-width: $breakpointLaptop) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 4rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      .projects__svg {
+        justify-self: end;
+        max-width: 22rem;
+      }
+
+      .section__header__text {
+        justify-self: start;
+        width: 27rem;
+      }
+    }
+  }
+}
