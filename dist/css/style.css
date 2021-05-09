@@ -317,13 +317,13 @@ footer .reference,
   font-weight: 500;
   line-height: 1.5;
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .projects .section__header .projects__svg {
     width: 40%;
     max-width: 40vw;
   }
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .projects .section__header {
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
@@ -351,7 +351,7 @@ footer .reference,
   align-items: stretch;
   justify-items: center;
 }
-@media screen and (min-device-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .projects-wrapper {
     row-gap: 4rem;
     grid-template-columns: 1fr;
@@ -399,20 +399,20 @@ footer .reference,
 .project__btns {
   margin: auto 1rem;
 }
-@media screen and (min-device-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .project {
     flex-direction: row;
-    width: 70vw;
+    width: 50vw;
     min-width: 40rem;
     max-width: 70rem;
     height: 35vh;
     border: none;
   }
   .project__img {
+    align-self: flex-start;
     order: 1;
-    margin-left: 2rem;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .project__info {
     padding: 0;
