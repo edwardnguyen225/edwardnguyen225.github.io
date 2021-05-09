@@ -153,7 +153,7 @@ footer .reference,
   margin: auto 0.3rem;
   width: 2.6rem;
 }
-.hero__social-media .social-icon:hover {
+.hero__social-media .social-icon:hover, .hero__social-media .social-icon:focus {
   transform: scale(1.2);
 }
 .hero__btn {
