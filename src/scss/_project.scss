@@ -1,56 +1,153 @@
 @use "variables" as *;
 
-.projects {
-  .section__header {
-    display: grid;
-    align-items: center;
-    justify-items: center;
+.projects .section__header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
 
-    padding: 3rem 2rem;
+  padding: 3rem 2rem;
 
-    background-color: $bondiBlue;
-    background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  background-color: $bondiBlue;
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
 
-    color: $kindaGrey;
+  color: $kindaGrey;
+
+  .projects__svg {
+    width: 70%;
+  }
+
+  .section__header__text {
+    .section__title {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .section__subtitle {
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (min-device-width: $breakpointTablet) and (max-device-width: $breakpointLaptop) {
+    .projects__svg {
+      width: 40%;
+      max-width: 40vw;
+    }
+  }
+
+  @media screen and (min-device-width: $breakpointLaptop) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 
     .projects__svg {
-      width: 70%;
+      justify-self: end;
+      max-width: 22rem;
     }
 
     .section__header__text {
-      .section__title {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
+      justify-self: start;
+      width: 27rem;
+    }
+  }
+}
 
-      .section__subtitle {
-        font-weight: 500;
-        line-height: 1.5;
-      }
+.projects-wrapper {
+  margin: auto;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  justify-content: center;
+  align-items: stretch;
+  justify-items: center;
+
+  @media screen and (min-device-width: $breakpointHugeDisplay) {
+    row-gap: 4rem;
+    grid-template-columns: 1fr;
+    padding-top: 4rem;
+    width: 80%;
+  }
+}
+
+.project {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  min-width: 18rem;
+  max-width: 24rem;
+  border: 1px solid rgba($brightGray, 0.5);
+
+  text-align: center;
+  line-height: 1.5;
+
+  &__img {
+    width: 100%;
+    height: 11.5rem;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+
+  &__info {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .title {
+      margin: 0 1rem 1rem;
     }
 
-    @media screen and (min-device-width: $breakpointTablet) and (max-device-width: $breakpointLaptop) {
-      .projects__svg {
-        width: 40%;
-        max-width: 40vw;
+    .description {
+      margin: 0.25em 1rem 1rem;
+
+      color: $brightGray;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      a {
+        text-decoration: none;
+        color: currentColor;
+
+        &:hover,
+        &:focus {
+          color: $bondiBlue;
+        }
       }
     }
+  }
 
-    @media screen and (min-device-width: $breakpointLaptop) {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 4rem;
-      margin-left: auto;
-      margin-right: auto;
+  &__btns {
+    margin: auto 1rem;
+  }
 
-      .projects__svg {
-        justify-self: end;
-        max-width: 22rem;
-      }
+  @media screen and (min-device-width: $breakpointHugeDisplay) {
+    flex-direction: row;
 
-      .section__header__text {
-        justify-self: start;
-        width: 27rem;
-      }
+    width: 70vw;
+    min-width: 40rem;
+    max-width: 70rem;
+    height: 35vh;
+
+    border: none;
+
+    &__img {
+      order: 1;
+      margin-left: 2rem;
+      width: 100%;
+      height: auto;
+    }
+
+    &__info {
+      padding: 0;
+      margin: 0;
+      width: 75%;
+      text-align: left;
+      flex: 1 0 40%;
+    }
+
+    &__btns {
+      margin-top: 1rem;
     }
   }
 }
