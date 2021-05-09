@@ -19,19 +19,23 @@
 
   @media screen and (min-device-width: $breakpointHugeDisplay) {
     width: 60%;
-    column-gap: 0;
+    justify-items: stretch;
   }
 }
 
 .card {
   padding: 1.5rem;
   min-width: 326px;
-  max-width: 352px;
   background-color: white;
 
   border: 1px solid whitesmoke;
   border-radius: 20px;
   box-shadow: rgb(0 0 0 / 19%) 0px 5px 10px, rgb(0 0 0 / 23%) 0px 6px 6px;
+
+  display: grid;
+  grid-template-rows: 1fr 0.3fr 1fr 1fr;
+  justify-content: center;
+  align-items: start;
 
   text-align: center;
   line-height: 1.5;
@@ -39,6 +43,7 @@
   &__icon {
     width: 5rem;
     height: 5rem;
+    margin: auto;
     margin-bottom: 1.25rem;
   }
 
